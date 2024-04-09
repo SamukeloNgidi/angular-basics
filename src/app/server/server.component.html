@@ -1,0 +1,6 @@
+<!--<p>The Server Component</p>-->
+<!--string interpolation - the goal is to return a string or something that can be converted to a string in the end-->
+<p [ngStyle]="{backgroundColor: getColor()}"
+    [ngClass]="{online: serverStatus === 'online'}"> <!--set online class (defined in the ts class) only when serverStatus is online-->
+    {{ 'Server' }} with ID {{ serverId }} is {{ getServerStatus() }}
+</p> 
